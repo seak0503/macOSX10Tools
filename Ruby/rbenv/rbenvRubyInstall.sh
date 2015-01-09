@@ -1,8 +1,20 @@
 #!/bin/bash
 
-# rbenvでRubyのインストールをするスクリプトです
-# rubyを使いたいユーザにスイッチしてからこのスクリプトを実行して下さい。
-# HomeBrewがインストールされていることを前提とします。
+#######################################################################
+# 解説
+#   rbenvでRubyのインストールをするスクリプトです
+#
+# 注意事項
+#   rubyを使いたいユーザにスイッチしてからこのスクリプトを実行して下さい。
+#
+# 前提条件
+#   条件1: Xcode Command line toolsがインストールされていること
+#     Xcodeのインストール方法
+#       1. AppStoreでXcodeをインストール
+#       2. ターミナルで`xcode-select --install`を実行
+#   条件2: HomeBrewがインストールされていることを前提とします
+#     HomeBrewのインストール方法
+#       1. `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`を実行
 
 
 ### rbenvをruby-buildのインストール
@@ -44,6 +56,15 @@ echo "インストールされたRubyのバージョンは $installed_ruby_virsi
 
 ### 環境全体のRubyバージョンを指定する
 rbenv global $(echo $installed_ruby_virsion | awk '{print $1}')
+
+### rbenv-gem-rehash(プラグイン)インストール
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+
+### rbenv-binstubs(プラグイン)インストール
+git clone git://github.com/ianheggie/rbenv-binstubs.git ~/.rbenv/plugins/rbenv-binstubs
+
+### rbenv-gemset(プラグイン)インストール
+git clone git://github.com/jf/rbenv-gemset.git ~/.rbenv/plugins/rbenv-gemset
 
 ### インストール完了のコメント
 ruby_virsion=$(ruby -v)
