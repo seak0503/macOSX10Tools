@@ -13,8 +13,7 @@
 ### 作業環境のディレクトリをユーザに確認する
 echo -n "作業環境ディレクトリを作成するフルパスを指定して下さい:"
 read dir_answer
-mkdir -p dir_answer
-cd dir_answer
+cd $dir_answer
 
 ### rbenvで利用可能なRubyの一覧を確認
 ruby_Versions=$(rbenv install --list)
@@ -81,7 +80,7 @@ cd $rails_project_name_answer
 bundle install --path=vendor/bundle --binstubs=vendor/bin
 
 ### インストール完了のコメント
-rails_project_dir=pwd
+rails_project_dir=$(pwd)
 echo "Railsのインストールが完了しました。"
 echo "Railsプロジェクトのディレクトリのパスは${rails_project_dir}です。"
 exit 0
