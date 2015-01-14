@@ -28,7 +28,14 @@ echo "git checkoutコマンドのエイリアス設定をgit coにしました"
 sleep 1
 
 ### コミットメッセージ入力エディタの指定
-git confg --global core.editor "subl -w"
+git config --global core.editor "subl -w"
 echo " "
 echo "コミットメッセージ入力エディタをSublimeTextに設定しました"
 sleep 1
+
+### 設定結果を表示
+echo " "
+echo "gitの設定が完了しました。設定内容は下記のとおりです"
+echo " "
+git config -l
+exit 0
