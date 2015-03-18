@@ -1,5 +1,8 @@
 #!/bin/sh
 
+### 使用方法
+# KarabinerをインストールしたPCでこのシェルスクリプトを実行する
+
 cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
 
 $cli set remap.pc_style_copy_paste 1
