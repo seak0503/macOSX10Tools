@@ -1,0 +1,29 @@
+### 使用方法
+# homedir/.vagrant.d/ にこのファイルを配置する
+# 各box用の秘密鍵を下記 `private_key_path`で指定しているところに配置する
+
+Vagrant.configure("2") do |config|
+  config.vm.define "baukis" do |baukis|
+    baukis.ssh.private_key_path = "~/vagrantBox/default.key"
+    baukis.vm.network "private_network", ip: "192.168.33.10"
+    baukis.vm.synced_folder ".", "/vagrant", nfs: true
+  end
+  config.vm.define "bois" do |bois|
+    bois.ssh.private_key_path = "~/vagrantBox/default.key"
+    bois.vm.network "forwarded_port", guest: 3000, host: 4000
+    bois.vm.network "private_network", ip: "192.168.33.11"
+    bois.vm.synced_folder ".", "/vagrant", nfs: true
+  end
+  config.vm.define "fweb-web" do |web|
+    web.ssh.private_key_path = "~/vagrantBox/minimal.key"
+    web.vm.network "forwarded_port", guest: 3000, host: 5000
+    web.vm.network "private_network", ip: "192.168.33.12"
+    web.vm.synced_folder ".", "/vagrant", nfs: true
+  end
+  config.vm.define "fweb-db" do |db|
+    db.ssh.private_key_path = "~/vagrantBox/minimal.key"
+  end
+  config.vm.define "fweb-db" do |idaccess|
+    idaccess.ssh.private_key_path = "~/vagrantBox/gnome.key"
+  end
+end
