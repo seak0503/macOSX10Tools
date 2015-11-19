@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
     db.ssh.private_key_path = "~/vagrantBox/fweb_boxes.key"
   end
   config.vm.define "idaccess" do |idaccess|
-    db.vm.synced_folder ".", "/vagrant", disabled: true
+    idaccess.vm.synced_folder ".", "/vagrant", disabled: true
     idaccess.ssh.private_key_path = "~/vagrantBox/fweb_boxes.key"
   end
 end
