@@ -38,4 +38,9 @@ Vagrant.configure("2") do |config|
     idaccess.vm.synced_folder ".", "/vagrant", disabled: true
     idaccess.ssh.private_key_path = "~/vagrantBox/fweb_boxes.key"
   end
+  config.vm.define "oldfweb" do |oldfweb|
+    oldfweb.ssh.private_key_path = "~/vagrantBox/default.key"
+    oldfweb.vm.network "private_network", ip: "192.168.33.13"
+    oldfweb.vm.synced_folder ".", "/vagrant", nfs: true
+  end
 end
