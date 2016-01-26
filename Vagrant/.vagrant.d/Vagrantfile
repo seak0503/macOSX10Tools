@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     end
     #baukis.ssh.private_key_path = "~/vagrantBox/default.key"
     baukis.vm.network "forwarded_port", guest: 3000, host: 3000
-    baukis.vm.network "private_network", ip: "192.168.33.10"
+    baukis.vm.network "private_network", ip: "192.168.33.2"
     baukis.vm.synced_folder ".", "/vagrant", nfs: true
   end
   config.vm.define "bois" do |bois|
@@ -27,7 +27,6 @@ Vagrant.configure("2") do |config|
     end
     web.ssh.private_key_path = "~/vagrantBox/fweb_boxes.key"
     web.vm.network "forwarded_port", guest: 3000, host: 5000
-    web.vm.network "private_network", ip: "192.168.33.12"
     web.vm.synced_folder ".", "/vagrant", nfs: true
   end
   config.vm.define "fweb-db" do |db|
@@ -37,19 +36,13 @@ Vagrant.configure("2") do |config|
   config.vm.define "idaccess" do |idaccess|
     idaccess.vm.synced_folder ".", "/vagrant", disabled: true
     idaccess.ssh.private_key_path = "~/vagrantBox/fweb_boxes.key"
-    idaccess.vm.network "private_network", ip: "192.168.33.20"
   end
   config.vm.define "oldfweb" do |oldfweb|
     oldfweb.vm.provider :virtualbox do |vb|
       vb.customize [ 'modifyvm', :id, '--memory',1024 ]
     end
-    oldfweb.ssh.private_key_path = "~/vagrantBox/default.key"
-    oldfweb.vm.network "private_network", ip: "192.168.33.13"
+    #oldfweb.ssh.private_key_path = "~/vagrantBox/default.key"
+    oldfweb.vm.network "private_network", ip: "192.168.33.31"
     oldfweb.vm.synced_folder ".", "/usr/local/bbtportal/bbtsite/", nfs: true
-  end
-  config.vm.define "stool01" do |stool01|
-    stool01.vm.synced_folder ".", "/vagrant", disabled: true
-    stool01.ssh.private_key_path = "~/vagrantBox/centos7_id_.rsa"
-    stool01.vm.network "private_network", ip: "192.168.33.21"
   end
 end
