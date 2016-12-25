@@ -14,6 +14,11 @@ xcode-select --install
 ### Homebrewをインストール
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+### brew doctorを実行
+echo "brew doctorを実行します。"
+echo "異常が見つかった場合は対処してください。"
+sleep 5
+
 ### インストール完了のコメント
 echo "インストールが完了しました。"
 exit 0
