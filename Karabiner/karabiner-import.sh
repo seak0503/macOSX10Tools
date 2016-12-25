@@ -1,14 +1,9 @@
 #!/bin/sh
 
-### 使用方法
-# KarabinerをインストールしたPCでこのシェルスクリプトを実行する
-
 cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
 
-$cli set remap.pc_style_copy_paste 1
+$cli set repeat.initial_wait 150
 /bin/echo -n .
-$cli set repeat.wait 20
-/bin/echo -n .
-$cli set remap.jis_yen2backslash 1
+$cli set repeat.wait 35
 /bin/echo -n .
 /bin/echo
