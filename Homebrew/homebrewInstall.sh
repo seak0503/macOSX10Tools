@@ -4,15 +4,15 @@
 # 解説
 #   Homebrewをインストールをするスクリプトです
 #
-# 前提条件
-#   条件1: Xcode Command line toolsがインストールされていること
-#     Xcodeのインストール方法
-#       1. AppStoreでXcodeをインストール
-#       2. ターミナルで`xcode-select --install`を実行
 
+### Command Line Tools for Xcodeのインストール
+echo "Command Line Tools for Xcodeをインストールします"
+echo "ポップアップが表示されたら インストール をクリックしてください"
+sleep 5
+xcode-select --install
 
 ### Homebrewをインストール
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ### インストール完了のコメント
 echo "インストールが完了しました。"
