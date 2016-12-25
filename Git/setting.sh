@@ -23,8 +23,15 @@ git config --global color.ui auto
 
 ### gitコマンドのエイリアス設定
 git config --global alias.co checkout
+git config --global alias.c commit
+git config --global alias.a add
+git config --global alias.b branch
+git config --global alias.m merge
+git config --global alias.s status
+git config --global alias.l log
+git config --global alias.d diff
 echo " "
-echo "git checkoutコマンドのエイリアス設定をgit coにしました"
+echo "エイリアス設定完了"
 sleep 1
 
 ### コミットメッセージ入力エディタの指定
