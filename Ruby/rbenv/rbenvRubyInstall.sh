@@ -15,18 +15,19 @@
 #   条件2: HomeBrewがインストールされていることを前提とします
 #     HomeBrewのインストール方法
 #       1. `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`を実行
+#   条件3: zshの設定が完了していること
 
 
 ### rbenvをruby-buildのインストール
 brew update
 brew install rbenv ruby-build
 brew install rbenv-gemset
-brew install rbenv-gem-rehash
 
 ### 環境変数の設定
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-source ~/.profile
+echo '# rbenvの設定' >> ~/.zshrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
+source ~/.zshrc
 
 ### インストール完了のコメント
 echo "インストールが完了しました。"
