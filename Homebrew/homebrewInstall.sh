@@ -18,6 +18,7 @@ xcode-select --install
 echo "brew doctorを実行します。"
 echo "異常が見つかった場合は対処してください。"
 sleep 5
+brew doctor
 
 ### インストール完了のコメント
 echo "インストールが完了しました。"
