@@ -1,14 +1,7 @@
 #!/bin/sh
 
-### RictyフォントをMAC(yosemite)にインストールするスクリプトです。
-### brewがインストールされていることが前提です。
+### 参考サイト1 http://jinnaitakumi.com/ricty_diminished/
+### 参考サイト2 http://www.rs.tus.ac.jp/yyusa/ricty_diminished.html
 
-brew install automake
-brew install pkg-config
-
-brew tap sanemat/font
-brew install Caskroom/cask/xquartz
-brew install ricty
-
-cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
+cp -f ricty_diminished-4.1.0/*.ttf ~/Library/Fonts/
 fc-cache -vf
