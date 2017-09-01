@@ -169,6 +169,8 @@
 	<integer>32</integer>
 	<key>HotkeyCode</key>
 	<integer>49</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>524288</integer>
 	<key>IRMemory</key>
@@ -183,12 +185,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>5</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/git/macOSX10Tools/iTerm2</string>
+	<string>~/iTerm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -199,50 +199,42 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
-	<key>NSTableView Columns v2 KeyBingingTable</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoK4HCA8aGxwdHh8gJjAxMlUkbnVsbNIJCgsOWk5TLm9iamVjdHNWJGNsYXNzogwN
-	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
-	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
-	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAczAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
-	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
-	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
-	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
-	AAAAADoAAAAAAAAAAAAAAAAAAAFM
-	</data>
-	<key>NSTableView Sort Ordering v2 KeyBingingTable</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGFBVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA1VJG51bGzSCQoLDFpOUy5vYmplY3RzViRjbGFzc6CAAtIODxARWiRjbGFz
-	c25hbWVYJGNsYXNzZXNeTlNNdXRhYmxlQXJyYXmjEBITV05TQXJyYXlYTlNPYmplY3Rf
-	EA9OU0tleWVkQXJjaGl2ZXLRFhdVQXJyYXmAAQgRGiMtMjc7QUZRWFlbYGt0g4ePmKqt
-	swAAAAAAAAEBAAAAAAAAABgAAAAAAAAAAAAAAAAAAAC1
-	</data>
-	<key>NSTableView Supports v2 KeyBingingTable</key>
-	<true/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>330</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>770 628 670 77 0 0 1440 900 </string>
-	<key>NSWindow Frame Preferences</key>
-	<string>516 409 606 456 0 0 1440 877 </string>
+	<string>624 1135 622 77 -350 900 1920 1080 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>410 1596 400 129 -350 900 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>102 217 796 473 0 0 1440 900 </string>
+	<string>160 342 796 473 0 0 1440 900 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>80 254 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>215 68 925 809 0 0 1440 877 </string>
+	<string>128 90 910 787 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>291 38 925 787 0 0 1440 900 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>515 5 925 787 0 0 1440 877 </string>
+	<string>241 1013 910 787 -241 900 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_467D5180-0E43-4758-93FE-21DE0B15A0E3</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -795,11 +787,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Ricty-Regular 18</string>
+			<string>Monaco 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Ricty-Regular 18</string>
+			<string>RictyDiminished-Bold 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -964,6 +956,8 @@
 			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use HFS Plus Mapping</key>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
@@ -976,18 +970,10 @@
 			<string>/Users/shyamahira</string>
 		</dict>
 	</array>
-	<key>NoSyncDisablePromotions</key>
-	<true/>
-	<key>NoSyncHaveShownPromoWithId_4</key>
-	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>F5E700E4-F166-4D4A-994D-D27DF77F1DAA</string>
-	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesCopy</key>
-	<true/>
+	<string>D510FC8D-5949-4E45-89C9-1F4A9CC27601</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -995,11 +981,7 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>486521382.77908498</real>
-	<key>NoSyncTimeOfLastPromo</key>
-	<real>477908112.07831001</real>
-	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>478494480.73904401</real>
+	<real>504433352.92647499</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1008,6 +990,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -1046,7 +1030,9 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/shyamahira/git/macOSX10Tools/iTerm2</string>
+	<string>/Users/shyamahira/iTerm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1060,11 +1046,13 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=39</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=31</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-25T20:07:48Z</date>
+	<date>2017-08-31T21:54:12Z</date>
+	<key>SUSendProfileInfo</key>
+	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1089,6 +1077,8 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1496066176</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -1112,6 +1102,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.1.beta.8</string>
 </dict>
 </plist>
