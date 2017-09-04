@@ -1,1 +1,2 @@
 mysql-5.6.37-macos10.12-x86_64.dmg filter=lfs diff=lfs merge=lfs -text
+mysql-5.6.37.tar.gz filter=lfs diff=lfs merge=lfs -text
